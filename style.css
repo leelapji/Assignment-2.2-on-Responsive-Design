@@ -9,12 +9,34 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.books {
+.booksimg {
   max-width: 200px;
 }
+header {
+  height: 500px;
+  width: 100%;
+  background-image: url("./assets/kw-background.png");
+  background-size: 100% 100%;
+  color: white;
+}
 
-.games,
-.crafts {
+.header-text {
+  flex-direction: column;
+  max-height: 100%;
+  max-width: 20%;
+  padding: 4% 5%;
+}
+
+header h1 {
+  font-size: 7vh;
+}
+
+header h5 {
+  font-size: 23px;
+  margin-top: 20px;
+}
+.gamesimg,
+.craftsimg {
   max-width: 300px;
 }
 
@@ -22,7 +44,7 @@ body {
   display: flex;
 }
 
-.section-container {
+.section-containerbox {
   flex-direction: column;
   padding: 5%;
 }
@@ -55,30 +77,6 @@ nav img {
   cursor: pointer;
 }
 
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
-  color: white;
-}
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
-}
-
-header h1 {
-  font-size: 7vh;
-}
-
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
-}
-
 .section {
   margin: 4% 0%;
 }
@@ -102,10 +100,9 @@ header h5 {
 }
 
 footer {
-  /* max-height: 300px; */
   background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
   background-size: 100% 100%;
-  color: white;
+  color: rgb(255, 252, 252);
   padding: 0% 5%;
 }
 
@@ -115,7 +112,7 @@ footer img {
   border-radius: 50%;
 }
 
-#details {
+#details_section {
   flex-direction: column;
   text-align: right;
 }
@@ -145,7 +142,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.container {
+.containerbox {
   flex-wrap: wrap;
 }
 
@@ -172,7 +169,7 @@ h2 {
     text-align: center;
   }
 
-  .container {
+  .containerbox {
     justify-content: center;
   }
 }
